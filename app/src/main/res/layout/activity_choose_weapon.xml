@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.ChooseWeaponActivity"
+    >
+
+  <TextView
+      android:id="@+id/textView3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:text="Choose your weapon !"
+      android:textSize="30dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+      android:id="@+id/activity_choose_weapon"
+      android:layout_width="408dp"
+      android:layout_height="154dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="5dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/activity_choose_weapon_rcv"
+      android:layout_width="407dp"
+      android:layout_height="395dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/activity_choose_weapon"
+      tools:listitem="@layout/item_weapon" />
+
+  <Button
+      android:id="@+id/activity_choose_weapon_next_button"
+      android:layout_width="410dp"
+      android:layout_height="61dp"
+      android:text="NEXT"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/activity_choose_weapon_rcv" />
+
+
+</android.support.constraint.ConstraintLayout>
